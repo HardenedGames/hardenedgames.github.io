@@ -1,4 +1,5 @@
 import './App.css';
+import ResponsiveAppBar from './AppBar';
 import Main from './Main';
 
 function App() {
