@@ -1,11 +1,10 @@
-import { AppBar } from '@mui/material';
 import './App.css';
 import Main from './Main';
 
 function App() {
   return (
     <div className="App">
-      <AppBar />
+      <ResponsiveAppBar />
       <header className="App-header">
         <p>
           Hardened Games
