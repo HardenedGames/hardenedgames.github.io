@@ -1,6 +1,5 @@
 import './App.css';
-import ResponsiveAppBar from './AppBar';
-import Main from './Main';
+import ResponsiveAppBar from './AppBar'
 
 function App() {
   return (
@@ -11,10 +10,6 @@ function App() {
           Hardened Games
         </p>
       </header>
-
-        <main>
-            <Main title="From the firehose" posts="posts" />
-        </main>
     </div>
   );
 }
