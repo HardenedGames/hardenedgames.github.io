@@ -27,7 +27,7 @@ const DiscordButton = () => (
         />
       </svg>
     </div>
-    <span>"Join the Discord"</span>
+    <span>Join the Discord</span>
   </a>
 );
 

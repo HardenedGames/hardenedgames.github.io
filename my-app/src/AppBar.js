@@ -141,12 +141,15 @@ export default function Pricing() {
           color="text.primary"
           gutterBottom
         >
-          Under Construction
+          Under Construction!
         </Typography>
         <Typography variant="h5" align="center" color="text.secondary" component="p">
           The Hardend Games company website is currently under construction! Check back later once the website is constructed! 
           Feel free to join the Obscure Depths community discord by clicking below!
         </Typography>
+        
+      </Container>
+      <Container>
         <DiscordButton />
       </Container>
       {/* End hero unit */}
