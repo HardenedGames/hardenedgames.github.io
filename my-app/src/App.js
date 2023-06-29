@@ -1,10 +1,10 @@
 import './App.css';
-import ResponsiveAppBar from './AppBar'
+import Pricing from './AppBar'
 
 function App() {
   return (
     <div className="App">
-      <ResponsiveAppBar />
+      <Pricing />
       <header className="App-header">
         <p>
           Hardened Games
