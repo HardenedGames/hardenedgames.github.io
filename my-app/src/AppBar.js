@@ -15,6 +15,7 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
+import DiscordButton from './DisordButton';
 
 function Copyright(props) {
   return (
@@ -144,8 +145,9 @@ export default function Pricing() {
         </Typography>
         <Typography variant="h5" align="center" color="text.secondary" component="p">
           The Hardend Games company website is currently under construction! Check back later once the website is constructed! 
-          Feel free to join the Obscure Depths community discord by clicking here!
+          Feel free to join the Obscure Depths community discord by clicking below!
         </Typography>
+        <DiscordButton />
       </Container>
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
