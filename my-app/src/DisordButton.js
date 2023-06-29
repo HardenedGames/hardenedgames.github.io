@@ -15,7 +15,7 @@ const DiscordButton = () => (
       textDecoration: "none"
     }}
   >
-    <div style={{ width: 25, height: 25, marginRight: 15 }}>
+    <div style={{ width: 25, height: 25, marginRight: 15, fill: 'white'}}>
       <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240">
         <path
           class="st0"
@@ -27,7 +27,7 @@ const DiscordButton = () => (
         />
       </svg>
     </div>
-    <span>Join the Discord</span>
+    <span>Join the Obscure Depths Discord!</span>
   </a>
 );
 
