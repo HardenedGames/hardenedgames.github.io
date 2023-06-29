@@ -82,7 +82,11 @@ const footers = [
 ];
 
 // TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
+const defaultTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 export default function Pricing() {
   return (
