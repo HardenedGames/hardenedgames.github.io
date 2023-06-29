@@ -149,7 +149,9 @@ export default function Pricing() {
         </Typography>
         
       </Container>
-      <Container>
+      <Container 
+        align="center"
+      >
         <DiscordButton />
       </Container>
       {/* End hero unit */}
