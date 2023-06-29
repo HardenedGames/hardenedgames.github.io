@@ -21,7 +21,7 @@ function Copyright(props) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Hardened Games
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -72,21 +72,7 @@ const tiers = [
 const footers = [
   {
     title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
-  },
-  {
-    title: 'Features',
-    description: [
-      'Cool stuff',
-      'Random feature',
-      'Team feature',
-      'Developer stuff',
-      'Another one',
-    ],
-  },
-  {
-    title: 'Resources',
-    description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
+    description: ['About Us', 'Meet the Team', 'Our Projects','Contact us'],
   },
   {
     title: 'Legal',
@@ -110,7 +96,7 @@ export default function Pricing() {
       >
         <Toolbar sx={{ flexWrap: 'wrap' }}>
           <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            Company name
+            Hardened Games
           </Typography>
           <nav>
             <Link
@@ -119,7 +105,7 @@ export default function Pricing() {
               href="#"
               sx={{ my: 1, mx: 1.5 }}
             >
-              Features
+              About Us
             </Link>
             <Link
               variant="button"
@@ -127,7 +113,7 @@ export default function Pricing() {
               href="#"
               sx={{ my: 1, mx: 1.5 }}
             >
-              Enterprise
+              Our Games
             </Link>
             <Link
               variant="button"
@@ -138,9 +124,11 @@ export default function Pricing() {
               Support
             </Link>
           </nav>
+          {/*
           <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
             Login
           </Button>
+          */}
         </Toolbar>
       </AppBar>
       {/* Hero unit */}
@@ -152,18 +140,17 @@ export default function Pricing() {
           color="text.primary"
           gutterBottom
         >
-          Pricing
+          Under Construction
         </Typography>
         <Typography variant="h5" align="center" color="text.secondary" component="p">
-          Quickly build an effective pricing table for your potential customers with
-          this layout. It&apos;s built with default MUI components with little
-          customization.
+          The Hardend Games company website is currently under construction! Check back later once the website is constructed! 
+          Feel free to join the Obscure Depths community discord by clicking here!
         </Typography>
       </Container>
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
         <Grid container spacing={5} alignItems="flex-end">
-          {tiers.map((tier) => (
+          {/*tiers.map((tier) => (
             // Enterprise card is full width at sm breakpoint
             <Grid
               item
@@ -224,7 +211,7 @@ export default function Pricing() {
                 </CardActions>
               </Card>
             </Grid>
-          ))}
+                    ))*/}
         </Grid>
       </Container>
       {/* Footer */}
