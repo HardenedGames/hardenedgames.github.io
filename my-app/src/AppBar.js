@@ -21,11 +21,9 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://www.hardened.games/">
-        Hardened Games
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+      {new Date().getFullYear() + ' '}
+      {'Hardened Games LLC. '}
+      {'All Rights Reserved.'}
     </Typography>
   );
 }
@@ -72,12 +70,32 @@ const tiers = [
 
 const footers = [
   {
-    title: 'Company',
+    title: '',
+    description: [''],
+  },
+    {
+    title: '',
+    description: [''],
+  },
+  {
+    title: 'Our Company',
     description: ['About Us', 'Meet the Team', 'Our Projects','Contact us'],
+  },
+    {
+    title: 'Our Socials',
+    description: ['Twitter', 'YouTube', 'Reddit','Discord'],
   },
   {
     title: 'Legal',
     description: ['Privacy policy', 'Terms of use'],
+  },
+    {
+    title: '',
+    description: [''],
+  },
+    {
+    title: '',
+    description: [''],
   },
 ];
 
@@ -92,15 +110,30 @@ export default function Pricing() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          minHeight: '100vh',
+        }}
+      >
       <CssBaseline />
       <AppBar
         position="static"
         color="default"
         elevation={0}
-        sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
+        sx={{ 
+          borderBottom: (theme) => 
+              `1px solid ${theme.palette.divider}`,
+
+          backgroundColor: (theme) =>
+              theme.palette.mode === 'light'
+                ? theme.palette.grey[200]
+                : theme.palette.grey[900], 
+        }}
       >
         <Toolbar sx={{ flexWrap: 'wrap' }}>
-          <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
+          <Typography variant="h4" color="inherit" align="left" noWrap sx={{ flexGrow: 1 }}>
             Hardened Games
           </Typography>
           <nav>
@@ -137,25 +170,26 @@ export default function Pricing() {
         </Toolbar>
       </AppBar>
       {/* Hero unit */}
-      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 5, pb: 1 }}>
         <Typography
           component="h1"
           variant="h2"
           align="center"
-          color="text.primary"
+          color="Orange"
           gutterBottom
         >
           Under Construction!
         </Typography>
-        <Typography variant="h5" align="center" color="text.secondary" component="p">
-          The Hardend Games company website is currently under construction! Check back later once the website is constructed! 
-          Feel free to join the Obscure Depths community discord by clicking below!
+        <Typography variant="h7" align="center" color="text.primary" component="p">
+          The Hardened Games website is currently under construction!
         </Typography>
       </Container>
-      <Container 
+      <Container
         align="center"
-        sx={{ pb: 30 }}
       >
+        <Typography variant= "h7" align="center" color="text.primary" component="p" sx={{pt: 5, pb: 1 }}>
+          We welcome you to join the Obscure Depths community discord by clicking below!
+        </Typography>
         <DiscordButton />
       </Container>
       {/* End hero unit */}
@@ -227,24 +261,32 @@ export default function Pricing() {
       </Container>
       {/* Footer */}
       <Container
-        maxWidth="md"
+        maxWidth="xxl"
         component="footer"
         sx={{
-          borderTop: (theme) => `1px solid ${theme.palette.divider}`,
-          mt: 8,
-          py: [3, 6],
+          py: 3,
+            px: 2,
+            mt: 'auto',
+            borderTop: (theme) => 
+              `1px solid ${theme.palette.divider}`,
+            
+            backgroundColor: (theme) =>
+              theme.palette.mode === 'light'
+                ? theme.palette.grey[200]
+                : theme.palette.grey[900],
         }}
       >
-        <Grid container spacing={4} justifyContent="space-evenly">
+        {/* 
+        <Grid container spacing={0} justifyContent="space-evenly">
           {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
+            <Grid item xs={6} sm={1} key={footer.title}>
               <Typography variant="h6" color="text.primary" gutterBottom>
                 {footer.title}
               </Typography>
               <ul>
                 {footer.description.map((item) => (
                   <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
+                    <Link href="#" variant="subtitle2" color="text.secondary">
                       {item}
                     </Link>
                   </li>
@@ -253,8 +295,10 @@ export default function Pricing() {
             </Grid>
           ))}
         </Grid>
-        <Copyright sx={{ mt: 5 }} />
+        */}
+        <Copyright sx={{ mt: 0 }} />
       </Container>
+    </Box>
       {/* End footer */}
     </ThemeProvider>
   );
