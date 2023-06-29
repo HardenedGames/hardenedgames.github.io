@@ -21,7 +21,7 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="https://www.hardened.games/">
         Hardened Games
       </Link>{' '}
       {new Date().getFullYear()}
@@ -147,10 +147,10 @@ export default function Pricing() {
           The Hardend Games company website is currently under construction! Check back later once the website is constructed! 
           Feel free to join the Obscure Depths community discord by clicking below!
         </Typography>
-        
       </Container>
       <Container 
         align="center"
+        sx={{ pb: 30 }}
       >
         <DiscordButton />
       </Container>
